@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get element by tag name example</title>
+</head>
+<body>
+    <p>ufhsuif hdsuifcui uisf hdju</p>
+    <p>fsdi dufhreu uiihgs idksh isifd</p>
+    <p>ddsfisdhf dfhdsuihf jhfsudi udishfuid</p>
+    <p>shhsdui dfhsduif jhdui d</p>
+    <p>faskhsduihtdusfih</p>
+    <button onclick="changeColorAll()">Change all paragraph color</button>
+    <button onclick="changeColor()">Change particular paragraph color</button>
+    <script>
+        function changeColorAll() {
+            var y = document.getElementsByTagName("p");
+            //alert("length = " + y.length);
+            for(var i = 0; i<y.length; i++) {
+                y[i].style.backgroundColor = "yellow";
+            }
+            
+        }
+
+        function changeColor() {
+            var x = document.getElementsByTagName("p");
+            x[2].style.backgroundColor = "orange";
+        }
+    </script>
+</body>
+</html>

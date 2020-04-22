@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=((89+120+103)/3);
+    var b=((116+94+123)/3);
+    var c=((97+134+105)/3);
+    document.write("Average of John's team:"+a);
+    document.write("<br>");
+    document.write("Average of Mike's team:"+b);
+    document.write("<br>");
+    document.write("Average of Mary's team:"+c);
+    document.write("<br>");
+    if(a>b&&a>c)
+    {
+        document.write("John's team is the winner with average score of:"+a);
+    }    
+    else if(b>a&&b>c)
+    {
+        document.write("Mike's team is the winner with average score of:"+b);
+    }
+    else if(c>a&&c>b)
+    {
+        document.write("Mary's team is the winner with average score of:"+c);
+    }
+    else
+    {
+        if(a==b&&a>b)
+        {
+            document.write("It's a tie between John and Mike.");
+        }
+        else if(a==c)
+        {
+            document.write("It's a tie between John and Mary.");
+        }
+        else{
+            document.write("It's a tie between all three.");
+        }
+    }
+    </script>
+</body>
+</html>

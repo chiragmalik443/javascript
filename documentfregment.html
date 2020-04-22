@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Fragment</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <div id="div"></div>
+    <script>
+        var div = document.getElementById("div");
+        var p1 = document.createElement("p");
+        var p2 = document.createElement("p");
+        var df = document.createDocumentFragment();
+        p1.textContent = "first para";
+        p2.textContent = "second para";
+        df.appendChild(p1);
+        df.appendChild(p2);
+        div.appendChild(df);
+    </script>
+</body>
+</html>

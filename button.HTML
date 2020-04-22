@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width= , initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <script>
+
+    function getElements(){
+
+        getElementsByTagName("input");
+
+        var x=document.getElementsByTagName("Input");
+
+        document.getElementById("demo").innerHTML=x.length;
+
+    }   
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" size="20"><br>
+
+    <input type="text" size="20"><br>
+
+    <input type="text" size="20"><br>
+
+<p>
+
+    <input type="button" onclick="getElements()" value="How many input elements?">
+
+</p>  
+
+<p id="demo"></p>
+
+</body>
+
+</html>
