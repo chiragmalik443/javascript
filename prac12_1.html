@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Employee Id</td>
+            <td>Salary</td>
+        </tr>
+        <tr>
+            <td id="1-1">A</td>
+            <td id="1-2">001</td>
+            <td id="1-3">10000</td>
+        </tr>
+        <tr>
+            <td id="2-1">B</td>
+            <td id="2-2">002</td>
+            <td id="2-3">10000</td>
+        </tr>
+        <tr>
+            <td id="3-1">C</td>
+            <td id="3-2">003</td>
+            <td id="3-3">10000</td>
+        </tr>
+        <tr>
+            <td id="4-1">D</td>
+            <td id="4-2">004</td>
+            <td id="4-3">10000</td>
+        </tr>
+        <tr>
+            <td id="5-1">E</td>
+            <td id="5-2">005</td>
+            <td id="5-3">10000</td>
+        </tr>
+        
+    </table>
+    <br>
+    <input type="number" min="1" max="6" id="row">Enter row number</input><br>
+    <input type="number" min="1" max="6" id="col">Enter column number</input><br>
+    <input type="text"  id="data">Enter new data</input><br>
+    <button id="button">Update</button>
+    <script>
+        var btn = document.getElementById("button");
+        btn.addEventListener("click",update);
+
+        function update(){
+            var row= document.getElementById("row").value;
+            var col=document.getElementById("col").value;
+            var data= document.getElementById("data").value;
+            console.log(row+col+""+data);
+            var cell= document.getElementById(row+"-"+col);
+            cell.innerText= data;
+        }
+    </script>
+</body>
+</html>

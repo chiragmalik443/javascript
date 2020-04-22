@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onfocus="myfunction()" id="1">
+    <input type="text" onfocus="myfunction1()" id="2">
+    <script>
+        function myfunction(){
+            var a=document.getElementById("1");
+            a.style.backgroundColor="red";
+        }
+        function myfunction1(){
+            var b=document.getElementById("2");
+            b.style.backgroundColor="teal";
+        }
+    </script>
+</body>
+</html>

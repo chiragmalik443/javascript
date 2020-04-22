@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td>r11</td>
+            <td>r22</td>
+        </tr>
+        <tr>
+            <td>r21</td>
+            <td>r22</td>
+        </tr>
+    </table>
+    <button onclick="insert()">INSERT ROW</button>
+    <button onclick="deleterow()">DELETE ROW</button>
+    <script>
+        function insert() {
+            var table = document.getElementById("table")
+            var row = table.insertRow(0);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "new cell1";
+            cell2.innerHTML = "new cell2";
+        }
+        function deleterow() {
+            document.getElementById("table").deleteRow(0);
+        }
+    </script>
+</body>
+
+</html>

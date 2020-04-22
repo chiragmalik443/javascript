@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM stopPropagation() Method</title>
+
+    <style>
+        #div1 {
+            background: purple;
+        }
+
+        #div2 {
+            background: pink;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="text-align:center">
+
+    <h1 style="color: blueviolet;">
+    dvsdfvf
+    </h1>
+
+    <h2>DOM stopPropagation() Method</h2>
+
+    <div id="div1" onclick="abc()">
+        heyy ooooo
+        <div id="div2" onclick="qwe(event)">
+            efhbskdfdsjl jsndfjnsdjl
+        </div>
+    </div>
+
+    <br>
+    <input type="checkbox" id="c">
+    Stop propagation:
+
+    <script>
+        function qwe(event) {
+            confirm("Inner div is clicked");
+            if (document.getElementById("c").checked) {
+                event.stopPropagation();
+            }
+        }
+
+        function abc() {
+            confirm("Outer div is clicked");
+        } 
+    </script>
+
+</body>
+
+</html>
